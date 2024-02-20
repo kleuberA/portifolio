@@ -64,19 +64,20 @@ export default function About() {
                         </div>
                     </div>
                     <div className='w-1/2 p-2 z-20 h-full'>
-                        <h1 className='text-2xl tracking-wider font-bold'>My Stack</h1>
+                        <h1 className='text-2xl tracking-wider font-bold pb-2'>My Stack</h1>
                         <div className='flex flex-row flex-wrap gap-5 '>
                             {listStack.map((stack, index) => {
                                 return (
                                     <div key={index} className='flex flex-row flex-wrap'>
-                                        {/* <h1 className='text-xl font-bold'>{stack.title}</h1> */}
                                         <div className='flex flex-row flex-wrap gap-3'>
                                             {stack.stack.map((item, index) => {
                                                 return (
-                                                    <div key={index} className='w-32 flex flex-col items-center justify-center text-sm group gap-2 p-2 rounded-sm'>
-                                                        <Image src={item.icon} alt={item.name} width={50} height={50} className='group-hover:scale-125 transition-all duration-300' />
-                                                        <div className=''>
-                                                            <span className=''>{item.name}</span>
+                                                    <div key={index} className='w-32 flex flex-col bg-background border border-border items-center justify-center text-sm group gap-2 rounded-sm'>
+                                                        <div className='p-2'>
+                                                            <Image src={item.icon} alt={item.name} width={50} height={50} className='group-hover:scale-125 transition-all duration-300' />
+                                                        </div>
+                                                        <div className='w-full relative bg-border h-full text-center py-2 flex justify-center items-center'>
+                                                            <span className='z-20'>{item.name}</span>
                                                         </div>
                                                     </div>
                                                 )
@@ -84,7 +85,6 @@ export default function About() {
                                         </div>
                                     </div>
                                 )
-
                             })}
                         </div>
                     </div>

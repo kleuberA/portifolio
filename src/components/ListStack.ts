@@ -63,7 +63,7 @@ export const ListStack = [
                 icon: ReactHookFormIcon
             },
             {
-                name: 'Suapabase',
+                name: 'Supabase',
                 icon: SupabaseIcon
             }
         ]
