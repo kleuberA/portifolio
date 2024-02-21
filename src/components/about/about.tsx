@@ -7,7 +7,6 @@ import { ListStack } from '../ListStack';
 export default function About() {
 
     const listStack = ListStack;
-    console.log(listStack)
 
     return (
         <section className="w-full h-screen">
