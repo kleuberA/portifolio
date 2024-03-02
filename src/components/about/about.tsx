@@ -9,7 +9,7 @@ export default function About() {
     const listStack = ListStack;
 
     return (
-        <section className="w-full h-screen">
+        <section className="w-full min-h-screen">
             <Image src={Background} alt={''} className='w-full h-full absolute -z-10' />
             <div className="h-full w-full flex flex-col items-center justify-start overflow-hidden">
                 <h1 className="md:text-7xl text-3xl lg:text-8xl font-bold text-center text-white relative z-20">
@@ -30,8 +30,8 @@ export default function About() {
                     />
                     <div className="absolute inset-0 w-full h-[10rem]  [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
                 </div>
-                <div className='w-full h-full flex flex-row'>
-                    <div className='w-1/2 h-full flex flex-col gap-4 justify-start items-center p-3'>
+                <div className='w-full h-full flex flex-col lg:flex-row'>
+                    <div className='w-full lg:w-1/2 h-full flex flex-col gap-4 justify-start items-center p-3'>
                         <div className='flex flex-row gap-3 items-center w-[70%]'>
                             <Image src={ProfileImage} alt={'Image of profile'} width={100} height={100} className='rounded-sm' />
                             <div>
@@ -39,7 +39,7 @@ export default function About() {
                                 <span className='text-sm text-accent-foreground/50'>Full Stack Developer</span>
                             </div>
                         </div>
-                        <div className='w-[70%] flex flex-col text-justify text-sm tracking-wider gap-2'>
+                        <div className='w-[80%] lg:w-[70%] flex flex-col text-justify text-xs lg:text-sm tracking-wider gap-2'>
                             <span className='text-justify'> Sou o Kleuber Aguiar da Silva,
                                 um desenvolvedor full stack dedicado a materializar ideias inovadoras.
                                 Possuo proficiência em linguagens como JavaScript, typescript, assim
@@ -62,7 +62,7 @@ export default function About() {
                             </span>
                         </div>
                     </div>
-                    <div className='w-1/2 p-2 z-20 h-full'>
+                    <div className='w-[80%] lg:w-1/2 p-2 z-20 h-full'>
                         <h1 className='text-2xl tracking-wider font-bold pb-2'>My Stack</h1>
                         <div className='flex flex-row flex-wrap gap-5 '>
                             {listStack.map((stack, index) => {
