@@ -37,7 +37,7 @@ export default function Contact() {
     return (
         <section className="w-full flex justify-center items-center h-screen">
             <Image src={Background} alt={''} className='w-full h-full absolute -z-10' />
-            <div className="w-[60dvw] h-[60dvh] rounded-sm mx-auto flex flex-col">
+            <div className="w-[90dvw] h-[80dvh] lg:w-[60dvw] lg:h-[60dvh] rounded-sm mx-auto flex flex-col">
                 <div className="w-full bg-[#0f172a] h-10 rounded-t-sm p-1 flex flex-row items-center">
                     <div className="flex flex-row gap-2 pl-2">
                         <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -49,15 +49,15 @@ export default function Contact() {
                 <div className='w-full h-full bg-[#0f172a] p-2 rounded-b-sm bg-opacity-40 backdrop-filter backdrop-blur-md'>
                     <div className='flex flex-col gap-1 w-full h-full transition-all duration-200'>
                         <h1 className='tracking-wider'>Contact Me!</h1>
-                        <span> ------------------------------------------------------------- </span>
+                        <span className='hidden lg:flex'> ------------------------------------------------------------- </span>
                         <form
                             action="https://formsubmit.co/kleuber20@hotmail.com"
                             method="POST" >
                             {!envEmail && (
-                                <div className='flex flex-row items-center gap-2'>
+                                <div className='flex flex-row items-center gap-1 lg:gap-2'>
                                     <ArrowRightIcon className='text-primary' width={25} height={25} />
                                     <span className='text-sky-700 font-bold text-2xl'>~</span>
-                                    <span className='text-accent-foreground/50'>Enter Email:  </span>
+                                    <span className='text-accent-foreground/50 text-sm lg:text-base'>Enter Email:  </span>
                                     <input
                                         type='email'
                                         className='w-1/2 h-8 bg-transparent focus:outline-none'
@@ -75,7 +75,7 @@ export default function Contact() {
                                 <div className='flex flex-row items-center gap-2'>
                                     <ArrowRightIcon className='text-primary' width={25} height={25} />
                                     <span className='text-sky-700 font-bold text-2xl'>~</span>
-                                    <span className='text-accent-foreground/50'>Enter Name:  </span>
+                                    <span className='text-accent-foreground/50 text-sm lg:text-base'>Enter Name:  </span>
                                     <input
                                         type='text'
                                         className='w-1/2 h-8 bg-transparent focus:outline-none'
@@ -90,10 +90,10 @@ export default function Contact() {
                                 </div>
                             )}
                             {envName && !envMessage && (
-                                <div className='flex flex-row items-center gap-2'>
+                                <div className='flex flex-row items-center gap-1 lg:gap-2'>
                                     <ArrowRightIcon className='text-primary' width={25} height={25} />
                                     <span className='text-sky-700 font-bold text-2xl'>~</span>
-                                    <span className='text-accent-foreground/50'>Enter Message:  </span>
+                                    <span className='text-accent-foreground/50 text-sm lg:text-base'>Enter Message:</span>
                                     <textarea
                                         className='w-1/2 h-8 bg-transparent focus:outline-none resize-none'
                                         onKeyDown={(event) => { if (event.key === 'Enter') { handleSubmitMessage(event) } }}
@@ -107,14 +107,14 @@ export default function Contact() {
                                 </div>
                             )}
                             {envEmail && envName && envMessage && (
-                                <div className='flex flex-col gap-1'>
+                                <div className='flex flex-col gap-3'>
                                     <div className='flex flex-col'>
                                         <h1>Email: {email}</h1>
                                         <h1>Name: {name}</h1>
                                         <h1>Message: {message}</h1>
                                     </div>
                                     <div>
-                                        <a href={`mailto:kleuber20@hotmail.com?subject=Contato Proposta&body=${message}`}>Enviar email</a>
+                                        <a className='bg-primary p-2 rounded-sm' href={`mailto:kleuber20@hotmail.com?subject=Contato Proposta&body=${message}`}>Enviar email</a>
                                     </div>
                                 </div>
                             )}
