@@ -1,14 +1,10 @@
 export const ListProjects = [{
-    title: "Evervault",
-    description: "A privacy API for developers",
-    technologies: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
-    image: "https://evervault.com/static/evervault-logo.svg",
-    url: "https://evervault.com",
-    repo: "https://github.com/jacobfryman/evervault",
-    listImages: [
-        "https://evervault.com/static/evervault-logo.svg",
-        "https://evervault.com/static/evervault-logo.svg",
-        "https://evervault.com/static/evervault-logo.svg",
-        "https://evervault.com/static/evervault-logo.svg",
-    ]
-}];
+    title: "My Chat Go",
+    description: "It is a chat application where several users can enter a certain room and send their message, and whoever is in the same room will be able to see the messages sent.",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Supabase", "Socket.io", "NestJS", "WebSocket"],
+    image: "https://imgur.com/N6TFcLq.png",
+    url: "",
+    repo: "https://github.com/kleuberA/mychatgo",
+},
+
+];

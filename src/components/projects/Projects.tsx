@@ -1,44 +1,43 @@
 "use client"
-import { Icon } from "../evervalt-card";
+
+import Image from "next/image";
+import { ListProjects } from "./ListProjects";
+import Link from "next/link";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function Projects() {
+
+    const listProject = ListProjects;
+
     return (
         <section className="w-full min-h-screen">
-            <div className="flex flex-col h-full w-[80dvw] p-5 mx-auto">
-                <h1 className="text-center text-2xl tracking-wider font-bold pb-5 lg:pb-0">Projects</h1>
-                <div className="flex flex-col items-center lg:items-start lg:flex-row gap-3">
-                    <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm p-4 relative h-56 w-56">
-                        <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-                        <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-                        <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-                        <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <h1>Titulo Do Projeto</h1>
-                        <span>Descrição</span>
-                        <div className="">Tecnologias</div>
-                    </div>
+            <div className="flex flex-col w-[80dvw] gap-5 p-5 mx-auto">
+                <h1 className="text-center text-2xl tracking-wider font-bold pb-5 lg:pb-0">Projetos</h1>
+                <div className="flex flex-row gap-5 w-full flex-wrap justify-center">
+                    {listProject.map((project, index) => (
+                        <div key={index} className="w-[30dvw]">
+                            <div className="h-[50dvh] bg-secondary p-2 group relative">
+                                <Link href={project.repo} target='_blank'>
+                                    <img src={project.image} alt={""} className="w-full h-full" />
+                                </Link>
+                                <div className="absolute bottom-5 right-5 hidden group-hover:flex bg-secondary p-2 rounded-sm">
+                                    <Link href={project.repo} target='_blank'>
+                                        <GitHubLogoIcon width={20} height={20} />
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <h1 className="text-2xl">{project.title}</h1>
+                                <div className="flex flex-row flex-wrap gap-3">
+                                    {project.technologies.map((tech, index) => (
+                                        <span key={index} className="text-xs bg-secondary/50 rounded-sm p-1">{tech}</span>
+                                    ))}
+                                </div>
+                                <span className="text-xs text-justify">{project.description}</span>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                {/* <div className="flex flex-col gap-3">
-                    <div className="flex flex-row gap-3">
-                        <div className="w-56 h-56 border border-border rounded-sm">
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h1>Titulo Do Projeto</h1>
-                            <span>Descrição</span>
-                            <div className="">Tecnologias</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-row-reverse gap-3">
-                        <div className="w-56 h-56 border border-border rounded-sm">
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h1>Titulo Do Projeto</h1>
-                            <span>Descrição</span>
-                            <div className="">Tecnologias</div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </section>
     )
