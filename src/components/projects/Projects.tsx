@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { ListProjects } from "./ListProjects";
 import Link from "next/link";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
