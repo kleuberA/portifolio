@@ -9,7 +9,7 @@ export default function Projects() {
     const listProject = ListProjects;
 
     return (
-        <section className="w-full min-h-screen">
+        <section className="w-full min-h-screen" id="project">
             <div className="flex flex-col w-[80dvw] gap-5 p-5 mx-auto">
                 <h1 className="text-center text-2xl tracking-wider font-bold pb-5 lg:pb-0">Projetos</h1>
                 <div className="flex flex-row gap-5 w-full flex-wrap justify-center">
