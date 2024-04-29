@@ -12,10 +12,10 @@ export default function Projects() {
         <section className="w-full min-h-screen" id="project">
             <div className="flex flex-col w-[80dvw] gap-5 p-5 mx-auto">
                 <h1 className="text-center text-2xl tracking-wider font-bold pb-5 lg:pb-0">Projetos</h1>
-                <div className="flex flex-row gap-5 w-full flex-wrap justify-center">
+                <div className="flex flex-col lg:flex-row gap-5 w-full flex-wrap justify-center">
                     {listProject.map((project, index) => (
-                        <div key={index} className="w-[30dvw]">
-                            <div className="h-[50dvh] bg-secondary p-2 group relative">
+                        <div key={index} className="lg:w-[30dvw]">
+                            <div className="lg:h-[50dvh] bg-secondary p-2 group relative">
                                 <Link href={project.repo} target='_blank'>
                                     <img src={project.image} alt={""} className="w-full h-full" />
                                 </Link>

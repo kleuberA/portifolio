@@ -6,7 +6,7 @@ interface FooterProps {
 export default function Footer(props: FooterProps) {
     return (
         <footer className="w-full h-[40dvh] bg-secondary">
-            <div className="w-[80dvw] h-full py-5 mx-auto flex flex-row justify-between">
+            <div className="w-[80dvw] h-full py-5 mx-auto flex gap-5 lg:gap-0 flex-row justify-between">
                 <div className="flex flex-col gap-2 h-full justify-around">
                     <h1 className="text-2xl">Kleuber Silva</h1>
                     <span className="text-xs">Made © 2024 Kleuber Silva </span>

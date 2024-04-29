@@ -11,7 +11,7 @@ export default function ContainerHero() {
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.5 }}
-                    className="text-3xl w-[35dvw]">
+                    className="text-3xl lg:w-[35dvw]">
                     Olá, sou o Kleuber Silva, um desenvolvedor full stack.
                 </motion.h1>
                 <motion.span
@@ -24,7 +24,7 @@ export default function ContainerHero() {
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.5 }}
-                className="w-full flex items-center justify-center">
+                className="w-full hidden lg:flex items-center justify-center">
                 <Image src={Computer} alt={""} />
             </motion.div>
         </section>
