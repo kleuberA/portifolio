@@ -10,7 +10,6 @@ export default function Menu() {
                 </div>
                 <div className="flex flex-row gap-5">
                     <a href="/" className="text-accent-foreground hover:text-accent-foreground/50 transition-all duration-300">Work</a>
-                    <a href="#project" className="text-accent-foreground hover:text-accent-foreground/50 transition-all duration-300">Projects</a>
                     <a href="/about" className="text-accent-foreground hover:text-accent-foreground/50 transition-all duration-300">About</a>
                     <a href="#" className="text-accent-foreground hover:text-accent-foreground/50 transition-all duration-300">Resume</a>
                 </div>

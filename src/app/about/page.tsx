@@ -1,4 +1,5 @@
 import ContainerAbout from "@/components/about/about";
+import Footer from "@/components/footer/Footer";
 import Menu from "@/components/menu";
 
 export default function About() {
@@ -6,6 +7,7 @@ export default function About() {
         <section>
             <Menu />
             <ContainerAbout />
+            <Footer />
         </section>
     )
 }
