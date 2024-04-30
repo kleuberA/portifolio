@@ -9,7 +9,7 @@ export default function ContainerAbout() {
                 <div className='w-full h-[80dvh] flex flex-col lg:flex-row'>
                     <div className='w-full lg:w-1/2 h-full flex flex-col gap-4 justify-center items-center p-3'>
                         <div className='w-[80%] lg:w-[70%] flex flex-col text-justify text-xs lg:text-sm tracking-wider gap-2'>
-                            <h1 className="bg-clip-text text-transparent bg-gradient-to-r font-extrabold text-2xl from-emerald-700 to-emerald-500">
+                            <h1 className="bg-clip-text text-transparent bg-gradient-to-r font-extrabold text-xl lg:text-2xl from-emerald-700 to-emerald-500">
                                 Conheça mais sobre mim
                             </h1>
                             <span className='text-justify'> Sou o Kleuber Aguiar da Silva,
@@ -34,12 +34,12 @@ export default function ContainerAbout() {
                             </span>
                         </div>
                     </div>
-                    <div className='w-[80%] lg:w-1/2 p-2 z-20 h-full flex items-center justify-center'>
+                    <div className='w-[80%] lg:w-1/2 p-2 z-20 h-full hidden lg:flex items-center justify-center'>
                         <Image src={Illustration} alt={""} width={450} height={450} />
                     </div>
                 </div>
-                <div className='w-[90dvw] mx-auto min-h-[30dvh] lg:mb-5'>
-                    <div className='flex flex-row justify-around w-full h-full'>
+                <div className='w-[80dvw] lg:w-[90dvw] mx-auto min-h-[30dvh] lg:mb-5'>
+                    <div className='flex flex-col gap-5 lg:gap-0 lg:flex-row justify-around w-full h-full'>
                         <div className='flex flex-col gap-2'>
                             <h1 className='font-bold'> 💻 Áreas de experiência</h1>
                             <span>Front End</span>
