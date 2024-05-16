@@ -1,5 +1,13 @@
 export const ListProjects = [
     {
+        title: "Quiz Up",
+        description: "This project is a simple quiz site called quizUp, built using NextJs with supabase. The objective is to create a question application where the user can answer several questions, resulting in a right or wrong answer. QuizUp is a project built with Next.js and Tailwind on the Frontend, supabase for database storage on the Backend. A bonus feature of the app is the dark mode option.",
+        technologies: ["ReactJs", "TypeScript", "TailwindCSS", "NextJs", "ShadCn", "Radix Icons", "Supabase"],
+        image: "https://imgur.com/hmGNgdY.png",
+        url: "",
+        repo: "https://github.com/kleuberA/quizup",
+    },
+    {
         title: "TimeSync",
         description: "A simple website for scheduling customers at a barbershop, with no functionality yet, just the UI made, suapabase will be added in the future to make this backend of the application in a simple, quick and efficient way.",
         technologies: ["ReactJs", "TypeScript", "TailwindCSS", "NextJs", "ShadCn", "Radix Icons"],
