@@ -1,5 +1,13 @@
 export const ListProjects = [
     {
+        title: "Core Sync API",
+        description: "CoreSync ERP is a web-based ERP system that is designed to help businesses manage their operations more efficiently. It is a comprehensive solution that covers all aspects of a business, including accounting, inventory management, sales, and customer relationship management. CoreSync ERP is easy to use and can be customized to meet the specific needs of your business.",
+        technologies: ["NestJS", "Prisma", "Swagger", "PostgreSQL", "TypeScript"],
+        image: "https://i.imgur.com/n800jzm.png",
+        url: "",
+        repo: "https://github.com/kleuberA/coresync-erp-backend",
+    },
+    {
         title: "Quiz Up",
         description: "This project is a simple quiz site called quizUp, built using NextJs with supabase. The objective is to create a question application where the user can answer several questions, resulting in a right or wrong answer. QuizUp is a project built with Next.js and Tailwind on the Frontend, supabase for database storage on the Backend. A bonus feature of the app is the dark mode option.",
         technologies: ["ReactJs", "TypeScript", "TailwindCSS", "NextJs", "ShadCn", "Radix Icons", "Supabase"],
