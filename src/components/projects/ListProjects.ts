@@ -1,5 +1,13 @@
 export const ListProjects = [
     {
+        title: "Unity Cicle",
+        description: "This is a simple authentication project using nestjs with graphql in the back end. It is a project to test knowledge in this technology.",
+        technologies: ["NestJS", "Prisma", "GraphQL", "PostgreSQL", "TypeScript", "NextJS", "Docker", "ShadCN", "Apollo Client", "ReactQuery"],
+        image: "https://i.imgur.com/SasFl41.png",
+        url: "",
+        repo: "https://github.com/kleuberA/UnityCircle",
+    },
+    {
         title: "Core Sync API",
         description: "CoreSync ERP is a web-based ERP system that is designed to help businesses manage their operations more efficiently. It is a comprehensive solution that covers all aspects of a business, including accounting, inventory management, sales, and customer relationship management. CoreSync ERP is easy to use and can be customized to meet the specific needs of your business.",
         technologies: ["NestJS", "Prisma", "Swagger", "PostgreSQL", "TypeScript"],
